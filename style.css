@@ -1,0 +1,94 @@
+header {
+    padding: 4px 12px;
+    background-color: #4CAF50;
+    margin: -8 -8 1 -8;
+    font-size: 32px;
+}
+
+#logo {
+    text-decoration: none;
+    color: black;
+}
+
+#mainbox {
+    margin: auto;
+    /*border: 1px solid #4CAF50;*/
+    position: relative;
+    top: 17%;
+    width: 50%;
+}
+
+#questionbox {
+    border: 1px solid #4CAF50;
+    position: relative;
+    font-size: 21px;
+    height: 200px;
+    margin-right: 10px;
+}
+
+#vertical-center {
+    position: relative;
+    top: 37%;
+    -ms-transform: translateY(-37%);
+    transform: translateY(-37%);
+}
+
+#question {
+    text-align: center;
+    margin: 21px;
+}
+
+#buttonbox {
+    /*border: 1px solid #4CAF50;*/
+    margin-top: 21px;
+    padding: 0% 0%;
+
+}
+
+#buttonbox>button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 21px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    position: relative;
+    margin: 1% 1%;
+    width: 47%;
+}
+
+#buttonbox>button:hover {
+    background-color: #3e8e41;
+    cursor: pointer;
+}
+
+#buttonbox>button:active {
+    background-color: #2f6a31;
+}
+
+#nivelbox {
+    margin-top: 42px;
+    text-align: center;
+    font-size: 21px;
+}
+
+#nivel {
+    color: black;
+}
+
+.ABCD {
+    font-size: 21px;
+}
+
+footer {
+    background-color: #4CAF50;
+    position: relative;
+    top:23%;
+    padding: 12px 23px;
+    margin: -8 -8 1 -8;
+    text-align: center;
+}
+  
+
