@@ -1,4 +1,4 @@
-const q1 = {
+﻿const q1 = {
     question:"No anime Naruto, o que o personagem Shikamaru admirava e queria ser?",
     a:"uma nuvem",
     b:"o Hokage",
