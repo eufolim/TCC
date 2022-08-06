@@ -12,10 +12,12 @@ header {
 
 #mainbox {
     margin: auto;
-    /* border: 1px solid #4CAF50; */
+    border: 1px solid #4CAF50; 
     position: relative;
     top: 90px;
     width: 50%;
+    background-image: url("http://ekladata.com/gpxtDEKF3SAMhmveo12ZOL0BaV8.jpg");
+    background-color: aqua;
 }
 
 #questionbox {
@@ -97,4 +99,7 @@ footer {
     display:block;
 }
   
-
+body {
+    background-color: aqua;
+    background-image: url("http://ekladata.com/gpxtDEKF3SAMhmveo12ZOL0BaV8.jpg");
+  }
