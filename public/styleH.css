@@ -1,0 +1,111 @@
+.column {
+    float: left; 
+    padding-top: 90px;
+    /* background-color: aquamarine; */
+    /* padding: 10px; */
+    /* height: 300px; Should be removed. Only for demonstration */
+}
+  
+.left {
+    width: 25%;
+}
+
+.right {
+    float: right;
+    width: 25%;
+}
+  
+.middle {
+    width: 50%;
+    text-align: center;
+}
+
+body {
+    /*background-image: url('https://i.quotev.com/myug2ojom3ra.jpg');*/
+    /*background-image: url('https://media.tenor.com/4e-jzGFTnxwAAAAC/goku-dragon-ball-z.gif');*/
+    background-image: url('https://i.pinimg.com/originals/de/cc/b7/deccb71621fd14823dfa1021bc2557cf.gif');
+
+}
+
+#main {
+    position: relative;
+    /*border: 1px solid #2f6a31;*/
+}
+
+#main>div {
+    opacity: 0%;
+    height: 100%;
+    animation: intro 1s normal 500ms forwards;
+}
+
+@keyframes intro {
+    from {text-shadow: 0px 0px 0px black;}
+    to {text-shadow: 0px 0px 21px white;}
+    from {opacity: 0%;}
+    to {opacity: 100%;}
+}
+
+h2 {
+    font-size: 42px;
+    margin: 37px 0px 6px 0px;
+}
+
+h1 {
+    font-size: 61px;
+    margin: 6px 0px 67px 0px;
+}
+
+#main>a {
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 7px;
+    width: 121px;
+    /*height: 42px;*/
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    padding: 21px 0px;
+}
+
+
+#main>a:hover {
+    background-color: #3e8e41;
+    cursor: pointer;
+}
+
+#main>a:active {
+    background-color: #2f6a31; 
+}
+
+#aplay {
+    margin-right: 40%;
+    opacity: 0%;
+    animation: aplay 1s normal 1500ms forwards;
+}
+  
+@keyframes aplay {
+    to {opacity: 100%;}
+    to {margin-right: 0%;}
+}
+
+#amake {
+    margin-left: 40%;
+    opacity: 0%;
+    animation: amake 1s normal 2s forwards;
+}
+
+@keyframes amake {
+    to {opacity: 100%;}
+    to {margin-left: 0%;}
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row {
+    position: relative;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <!-- meta utf-8 não funciona °^° -->
+        <!-- meta utf-8 voltou a funcionar :D -->
+        <!-- meta iso-8859-1 funciona melhor com html4 -->
+        <link rel="stylesheet" href="styleQ.css">
+        <link rel="stylesheet" href="styleBase.css">
+        <!-- script src="https://unpkg.com/axios/dist/axios.min.js"></script -->
+        <script type="text/javascript" charset="utf-8" src="scriptQ.js" ></script>
+    </head>
+    <body id="mainbody">
+        <header>
+           <a href="http://localhost:8080/home" id="logo">Anime Quiz</a> 
+           <div id="logreg">
+                <button> 
+                    <a href="http://localhost:8080/login">login</a>
+                </button>
+                <span>/</span>
+                <button>
+                    <a href="http://localhost:8080/register">register</a>
+                </button>
+           </div>
+        </header>
+        <div id="content">
+            <div class="row">
+                <div class="column left">
+                    <div id="imgl">
+                        <!--img id="imgs" src="http://images5.fanpop.com/image/photos/26900000/Shikamaru-shikamaru-26946936-300-625.png"-->
+                    </div>
+                </div>
+                <div class="column middle">
+                    <div id="mainbox" class="intro">
+                        <div id="questionbox">
+                            <p id="question">example question</p>                       
+                        </div>
+                        <div id="buttonbox">
+                            <button type="button" id="a" onclick="test('a')">
+                                <strong class="ABCD">A) </strong><b id="ansA">answer</b>
+                            </button>
+                            <button type="button" id="b" onclick="test('b')">
+                                <strong class="ABCD">B) </strong><b id="ansB">answer</b>
+                            </button>
+                            <button type="button" id="c" onclick="test('c')">
+                                <strong class="ABCD">C) </strong><b id="ansC">answer</b>
+                            </button>
+                            <button type="button" id="d" onclick="test('d')">
+                                <strong class="ABCD">D) </strong><b id="ansD">answer</b>
+                            </button>
+                        </div>
+                        <div id="nivelbox">
+                            <p>nivel: <b id="nivel">none</b></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column right">
+                    <div id="imgr">
+                        <!--img id="imgs" src="http://images5.fanpop.com/image/photos/26900000/Shikamaru-shikamaru-26946936-300-625.png"-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>erros: <b id="erros">0</b> pontuação: <b id="score">0</b> acertos: <b id="acertos">0</b></p>
+        </footer>
+    </body>
+</html>

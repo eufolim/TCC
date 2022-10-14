@@ -1,0 +1,19 @@
+body {
+    background-color: lightgrey;
+}
+
+#content {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+}
+
+#warn {
+    margin-bottom: 42px;
+    width: 100%;
+    text-align: center;
+    border: 7px dashed black yellow;
+}

@@ -1,0 +1,53 @@
+body {
+    background-image: url('https://i.quotev.com/myug2ojom3ra.jpg');
+}
+
+.column {
+    float: left; 
+    width: 50%;
+    /*background-color: aqua;*/
+}
+
+#formbox {
+    border: 1px solid #4CAF50;
+    border-radius: 12px;
+    position: relative;
+    /*font-size: 21px;
+    height: 200px;
+    margin-right: 10px;*/
+    background: rgba(199, 241, 201, 0.678);
+    float: right;
+    margin: 11% 17% 0% 0%;
+    padding: 17px 17px 0px 17px;
+    animation: intro 1s normal 1s forwards;
+    opacity: 0%;
+}
+
+@keyframes intro {
+    to {opacity: 100%;}
+    to {margin: 11% 12% 0% 0%;}
+}
+
+#form>input {
+    margin: 0px 7px 17px 7px;
+    font-size: 19px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+img {
+    animation: introm 1s normal 1s forwards;
+    max-height: 90vh;
+    height: 90vh;
+    opacity: 0%;
+    margin-left: 67px;
+}
+
+@keyframes introm {
+    to {opacity: 100%;}
+    to {margin-left: 23px;}
+}

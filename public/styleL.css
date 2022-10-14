@@ -1,0 +1,48 @@
+body {
+    background-image: url('https://i.quotev.com/myug2ojom3ra.jpg');
+}
+
+#content {
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#formbox {
+    border: 1px solid #4CAF50;
+    border-radius: 12px;
+    position: relative;
+    background: rgba(199, 241, 201, 0.678);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 19%;
+    padding: 17px;
+    margin-bottom: 0px;
+    animation: intro 1s normal 1s forwards;
+    opacity: 0%;
+}
+
+@keyframes intro {
+    to {margin-bottom: 21px;}
+    to {opacity: 100%;}
+}
+
+#user {
+    margin: 0px 7px 17px 7px;
+    font-size: 19px;
+}
+
+#pass {
+    margin: 0px 7px 17px 7px;
+    font-size: 19px;
+}
+
+#sub {
+    margin: 11px 7px 11px 7px;
+    font-size: 19px;
+}
+
+

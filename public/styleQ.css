@@ -1,0 +1,177 @@
+#content {
+    position: relative;
+    width: 100%;
+    height: inherit;
+}
+
+@keyframes outro {
+    from {opacity: 100%;}
+    to {opacity: 0%;}
+    from {margin-top: 10%;}
+    to {margin-top: 0%;}
+}
+
+#mainbox {
+    /*border: 1px solid #4CAF50;*/
+    position: relative;
+    /* background-image: url("http://ekladata.com/gpxtDEKF3SAMhmveo12ZOL0BaV8.jpg"); */
+    opacity: 0%;
+    margin-top: 20%;
+    max-height: 90vh;
+}
+
+.intro{
+    animation: intro 1s normal 500ms forwards;
+}
+
+@keyframes intro {
+    to {margin-top:10%;}  
+    to {opacity: 100%;} 
+}
+
+#imgs {
+    max-height: 90vh;
+}
+
+#imgl {
+    position: relative;
+    opacity: 100%;
+    animation: introimgl 1s normal 2s forwards;
+}
+
+@keyframes introimgl {
+    to {opacity: 100%;}
+    to {max-width: 100%;}
+}
+
+#imgr {
+    opacity: 100%;
+    animation: introimgr 1s normal 2s forwards;
+}
+
+@keyframes introimgr {
+    to {opacity: 100%;}
+    to {max-width: 100%;}
+}
+
+#questionbox {
+    border: 1px solid #4CAF50;
+    border-radius: 12px;
+    position: relative;
+    font-size: 21px;
+    height: 200px;
+    /*margin-right: 10px;*/
+    background: rgba(199, 241, 201, 0.678);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#question {
+    text-align: center;
+    margin: 21px;
+}
+
+#buttonbox {
+    /*border: 1px solid #4CAF50;*/
+    margin-top: 21px;
+    padding: 0% 0%;
+}
+
+#buttonbox>button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    border-radius: 7px;
+    color: white;
+    padding: 15px 21px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    position: relative;
+    margin: 1% 1%;
+    width: 47%;
+}
+.correct{
+    animation: cor 500ms normal 0ms forwards !important;
+}
+
+@keyframes cor {
+    to {background-color: green }
+}
+
+.wrong{
+    animation: wro 500ms normal 0ms forwards !important;
+}
+
+@keyframes wro {
+    to {background-color: red }
+}
+
+#buttonbox>button:hover {
+    background-color: #3e8e41;
+    cursor: pointer;
+}
+
+#buttonbox>button:active {
+    background-color: #2f6a31; 
+}
+
+#nivelbox {
+    margin-top: 42px;
+    text-align: center;
+    font-size: 21px;
+}
+
+#nivel {
+    color: black;
+}
+
+.ABCD {
+    font-size: 21px;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left; 
+    padding: 1px;
+    /* background-color: aquamarine; */
+    /* padding: 10px; */
+    /* height: 300px; Should be removed. Only for demonstration */
+}
+  
+.left, .right {
+    width: 25%;
+    height: 90vh;
+}
+
+  
+.middle {
+    width: 49.5%;
+    height: 90vh;
+    max-height: 90vh;
+    /*padding-top: 70px;*/
+}
+  
+/* Clear floats after the columns */
+.row:after {
+    display: table;
+    clear: both;
+}
+
+.row {
+    position: relative;
+}
+
+#erros {
+    color: red;
+}
+
+#acertos {
+    color: green;
+}
+
+footer {
+    text-align: center;
+}
+
