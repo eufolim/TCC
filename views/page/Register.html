@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="styleR.css">
         <link rel="stylesheet" href="styleBase.css">
+        <script type="text/javascript" charset="utf-8" src="scriptR.js" ></script>
     </head>
     <body>
         <header>
@@ -13,19 +14,20 @@
             <div class="row">
                 <div class="column">
                     <div id="formbox">
-                        <form id="form" action="D:\TCC\register.js" method="post">
-                            <label for="text">Nome de usuario:</label><br>
-                            <input type="text"><br>
+                        <form id="form" name="form" action="/validate" onsubmit="return insertUser()" method="post">
+                            <label for="text">*Nome de usuario:</label><br>
+                            <input id="user" name="user" type="text" autocomplete="on" required><br>
                             <label for="email">Endereço de E-mail:</label><br>
-                            <input type="email"><br>
-                            <label for="password">Senha:</label><br>
-                            <input type="password"><br>
-                            <label for="password">Confirmar Senha:</label><br>
-                            <input type="password"><br>
+                            <input id="email" name="email" type="email" autocomplete="on"><br>
+                            <label for="password">*Senha:</label><br>
+                            <input id="pass1" name="pass1" type="password" autocomplete="off" min=3 max=12 required><br>
+                            <label for="password">*Confirmar Senha:</label><br>
+                            <input id="pass2" name="pass2" type="password" autocomplete="off" min=3 max=12 required><br>
                             <label for="date">Data de Nascimento:</label><br>
-                            <input type="date"><br>
-                            <input type="checkbox"><span>Li e aceito os <a href="">termos de uso</a></span><br>
-                            <input type="submit" value="Confirmar"> 
+                            <input type="date" name="date" autocomplete="off" ><br>
+                            <input type="checkbox" required><span>*Li e aceito os <a href="">termos de uso</a></span><br>
+                            <input type="submit" value="submit"> 
+                            <span>campos com "*" são obrigatorios</span>
                         </form>
                     </div>
                 </div>

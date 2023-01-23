@@ -2,9 +2,13 @@ var fs = require('fs');
 const express = require('express');
 const path = require('path')
 const app = express()
-const mysql = require('mysql')
+const mysql = require('mysql');
+const { endianness } = require('os');
 
 app.use(express.static('public'));
+
+app.use(express.json()); // Used to parse JSON bodies
+app.use(express.urlencoded({ extended: true }));
 
 app.get('/quiz',(req,res)=>{
   res.sendFile(path.join(__dirname+'/views/page/Questions.html'))
@@ -25,6 +29,19 @@ app.get('/home',(req,res)=>{
 app.get('/maker',(req,res)=>{
   res.sendFile(path.join(__dirname+'/views/page/Maker.html'))
 });
+
+app.post('/validate',(req, res)=>{
+  //tratar o body
+  console.log(req.body.pass1);
+  console.log(req.body);
+  var pass1 = req.body.pass1;
+  var pass2 = req.body.pass2; 
+
+  if (pass1 != pass2) {
+    console.warn("passwords don't match");
+  };
+  // res.send('ksdjnlkzsjbflkjsdbfks');
+})
 
 app.get('/question/:id', (req,res)=>{
   con.query("SELECT * FROM questions WHERE id = ?", [req.params.id] , function (err, result, fields) {

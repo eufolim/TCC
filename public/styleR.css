@@ -21,6 +21,7 @@ body {
     padding: 17px 17px 0px 17px;
     animation: intro 1s normal 1s forwards;
     opacity: 0%;
+    width: 42%;
 }
 
 @keyframes intro {
@@ -30,7 +31,19 @@ body {
 
 #form>input {
     margin: 0px 7px 17px 7px;
-    font-size: 19px;
+    font-size: 17px;
+}
+
+#form>input[type=text] {
+    width: 90%;
+}
+
+#form>input[type=email] {
+    width: 90%;
+}
+
+#form>input[type=password] {
+    width: 90%;
 }
 
 .row:after {
@@ -45,6 +58,10 @@ img {
     height: 90vh;
     opacity: 0%;
     margin-left: 67px;
+}
+
+span {
+    font-size: smaller;
 }
 
 @keyframes introm {

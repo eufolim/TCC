@@ -132,10 +132,14 @@ async function test(option) {
     await wait(750);
     n++;
     console.log(n);
+    if (n >= 12) {
+        location.replace("/home");
+    } else {
     getq(n);
     await wait(750);
     document.querySelector('body').style.animation = "introb 1s normal forwards";
     document.getElementById('mainbox').style.animation = "intro 1s normal forwards";
+    };
     
 };
 
